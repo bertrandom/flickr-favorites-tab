@@ -8,7 +8,7 @@
       "newtab": "flickr-tab.html"
    },
    "content_security_policy": "script-src 'self' https://*.flickr.com; object-src 'self'",
-   "homepage_url": "https://www.flickr.com/chrome",
+   "homepage_url": "https://github.com/bertrandom/flickr-favorites-tab",
    "icons": {
       "48": "fave48.png"
    },
