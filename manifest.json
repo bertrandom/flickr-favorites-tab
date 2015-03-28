@@ -1,0 +1,20 @@
+{
+   "name": "Flickr Favorites Tab",
+   "background": {
+      "persistent": true,
+      "scripts": [ "event.js" ]
+   },
+   "chrome_url_overrides": {
+      "newtab": "flickr-tab.html"
+   },
+   "content_security_policy": "script-src 'self' https://*.flickr.com; object-src 'self'",
+   "homepage_url": "https://www.flickr.com/chrome",
+   "icons": {
+      "48": "fave48.png"
+   },
+   "incognito": "split",
+   "manifest_version": 2,
+   "options_page": "options.html",
+   "permissions": [ "alarms", "storage" ],
+   "version": "1.0"
+}

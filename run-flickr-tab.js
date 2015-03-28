@@ -1,0 +1,1 @@
+(function(){"use strict";window.onload=function(){FlickrTab.init()}}).call(this);

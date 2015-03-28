@@ -1,0 +1,111 @@
+@font-face{
+  font-family: "Proxima Nova";
+  font-weight: 500;
+  src: url('ProximaNova-Sbold-webfont-v2.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  background: #212124;
+  overflow: hidden;
+  font-family: "Proxima Nova","helvetica neue",helvetica,arial,sans-serif;
+}
+
+#photo {
+  white-space: nowrap;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+#thumbnail-link {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#thumbnail-image {
+  display: none;
+}
+
+img {
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  height: auto;
+  vertical-align: middle;
+  margin: auto 0;
+}
+
+#photo:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  position: absolute;
+}
+
+iframe {
+  vertical-align: middle;
+  height: 100% !important;
+  width: 100% !important;
+  opacity: 0.0 !important;
+}
+
+iframe.ready {
+  opacity: 1.0 !important;
+}
+
+.footer {
+  width: 100%;
+  height: 61px;
+  position: absolute;
+  left:0;
+  bottom:0;
+  box-shadow: inset 0 -90px 60px -25px rgba(0,0,0,0.4);
+  padding-top: 40px;
+}
+
+.hide {
+  display: none;
+}
+
+.title {
+  position: absolute;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 500;
+  bottom: 44px;
+  left: 40px;
+}
+
+.title a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px;
+}
+
+.flickr-logo {
+  background: url('flickr_logo_small_white.png') no-repeat top right;
+  opacity: 0.5;
+  position: absolute;
+  top: 30px;
+  right: 41px;
+  width: 67px;
+  height: 23px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  .flickr-logo {
+    background: url('flickr_logo_small_white@2x.png') no-repeat top right;
+    background-size: 67px;
+  }
+}
